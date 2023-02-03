@@ -1,0 +1,54 @@
+.todasMetas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.meta{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    background: rgb(227, 227, 227);
+
+    width: 80%;
+    min-height: 4rem;
+    padding: 0 1rem;
+    margin: 1.2rem 0;
+
+    border: 1px solid rgb(89, 89, 89);
+    border-radius: 20px;
+    transition: .7s;
+}
+.meta.checked{
+    background: rgba(0, 228, 0, 0.6);
+}
+
+button.check{
+    border: 2px solid rgb(89, 89, 89);
+    outline: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30%;
+    background-color: rgba(198, 198, 198, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+button#excluir{
+    background: transparent;
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.paragrafoMeta{
+    max-width: 80%;
+    min-height: 20px;
+    flex-wrap: wrap;
+    overflow: auto;
+}

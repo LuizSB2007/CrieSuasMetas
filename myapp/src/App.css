@@ -1,0 +1,57 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 80%;
+
+  margin: 4rem auto 0;
+  margin-top: 4rem;
+}
+div.form_metas{
+  width: 80%;
+  box-sizing: border-box;
+}
+
+form{
+  display: grid;
+  grid-template-areas: "label  label" "textarea button";
+  grid-template-columns: 80% 1fr;
+  row-gap: .5rem;
+  grid-auto-rows: 3rem;
+}
+label{
+  align-self:flex-end;
+  justify-self: center;
+  margin-left: 25%;
+  font-size: 17px;
+}
+
+textarea{
+  grid-area: textarea;
+  outline: none;
+  border: none;
+  align-self: center;
+  height: 95%;
+  text-align: center;
+  padding: 5px 0 0;
+  transition: 1s;
+  resize: none;
+  border-radius: 5px 0 0 5px;
+}
+textarea:focus{
+  background: rgb(227, 227, 227);
+}
+button{
+  grid-area: button;
+  background: rgb(255, 43, 43);
+  align-self: center;
+  border: none;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 0 5px 5px 0;
+}
+button:hover{
+  background-color: rgb(117, 195, 0);
+  cursor: pointer;
+}
